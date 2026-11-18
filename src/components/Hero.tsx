@@ -80,18 +80,53 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={450}>
-          <div className="mt-4 mx-auto max-w-2xl flex items-start gap-3 rounded-xl border border-amber-500/25 bg-amber-500/5 px-5 py-4 text-left">
-            <AlertTriangle className="w-5 h-5 mt-0.5 shrink-0 text-amber-400" />
-            <p className="text-sm leading-relaxed text-amber-200/90">
-              Windows Defender and some antivirus programs may flag the macro as
-              a potential threat. These detections can be false positives
-              associated with Python-based automation software. Please review
-              the{' '}
-              <a href="#faq" className="underline underline-offset-2 font-medium hover:text-amber-100 transition-colors">
-                FAQ
-              </a>{' '}
-              before downloading.
+          <div className="mt-4 mx-auto max-w-2xl rounded-xl border border-amber-500/25 bg-amber-500/5 px-5 py-4 text-left">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 mt-0.5 shrink-0 text-amber-400" />
+              <p className="text-sm leading-relaxed text-amber-200/90">
+                Windows Defender and some antivirus programs may flag the macro as
+                a potential threat. These detections can be false positives
+                associated with Python-based automation software. Please review
+                the{' '}
+                <a href="#faq" className="underline underline-offset-2 font-medium hover:text-amber-100 transition-colors">
+                  FAQ
+                </a>{' '}
+                before downloading.
+              </p>
+            </div>
+            <p className="mt-3 px-0 sm:pl-8 text-xs font-semibold uppercase tracking-wider text-amber-300/80">
+              Before you download — follow these steps
             </p>
+            <ol className="mt-3 space-y-2.5 px-0 sm:pl-8 text-sm leading-relaxed text-amber-200/90 list-none">
+              <li className="flex gap-3">
+                <span className="shrink-0 font-display font-semibold text-amber-400">1.</span>
+                <span>
+                  Open <span className="font-semibold text-white">Windows Defender</span> (Windows Security) on your PC.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 font-display font-semibold text-amber-400">2.</span>
+                <span>
+                  Go to <span className="font-semibold text-white">Virus &amp; threat protection</span> and add an{' '}
+                  <span className="font-semibold text-white">exclusion</span> for a folder on your computer (this keeps
+                  the macro from being removed).
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 font-display font-semibold text-amber-400">3.</span>
+                <span>
+                  Click the download button above to get the{' '}
+                  <span className="font-semibold text-white">latest version</span>.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 font-display font-semibold text-amber-400">4.</span>
+                <span>
+                  Make sure to save the download <span className="font-semibold text-white">in that same folder</span> you
+                  excluded.
+                </span>
+              </li>
+            </ol>
           </div>
         </Reveal>
 
